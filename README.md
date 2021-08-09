@@ -5,7 +5,7 @@ An assembler and disassembler for the low-level language assembly, which will co
 
 This program takes assembly (or `.asm`) files and assembles them into machine language, A.K.A, binary. I used the file extension `.hack` to represent machine language code. Not to be confused with the programming language hack, the `.hack` files in my program only consist of binary, or 1's and 0's. 
 
-The files you see that end with `.asm` or `.hack` are there pureley for testing. You can test it yourself to see the assembler/disassembler in action. You can also create your own files if you so wish.
+The files you see that end with `.asm` or `.hack` are there pureley for testing. You can test it yourself to see the assembler/disassembler in action. You can also create your own files if you so wish. Assembling `test.asm` will result in the `test.hack` file and vice versa. The same is true for `programTest.asm` and `programTest.hack`. Of course, if you don't delete any of these, nothing will change when you run it through the program, as both the `.hack` and `.asm` files already exist, so no new files will be created.
 
 ## Demo
 
