@@ -1,30 +1,11 @@
-Instructions for program:
-
-1. compile program. 
-    
-    You can use: g++ assembler.h assembler.cpp table.cpp table.h main.cpp disassembler.h disassembler.cpp -o a.out
-    And then to run it:    ./a.out
-
-or compile to your liking.
-
-2. add .txt or .hack or .asm file (whatever is being used to test) to repository
-
-3. go to main.cpp function, this will be all you need.
-4. for assembly, just call: assemble("testfilename.whatever")
-5. for disassembly, just call: disassemble("testFileName.whatever")
-
-6. after writing the functions, run the program with ./a.out or with whatever you like
-
-7. these will automatically create .hack and .asm files with the result of the output
-
 # Assembly-To-From-MachineLanguage
-Implementation of every main data structure, as well as Dijkstra's and Prim's algorithm.
+An assembler and disassembler for the low-level language assembly, which will convert assembly files to machine language, and machine language files to assembly.
 
 ## About
 
-Once you execute, a menu will show up. Click 1-9 depending on what you want. Each one will show a different data structure. If you wish to use the data structures, or test your own values, simply go into the structures.cpp file. There will be functions for each data structure. In the function for the data structure you want, you can create your own object and test your own values if you wish. 
+This program takes assembly (or `.asm`) files and assembles them into machine language, A.K.A, binary. I used the file extension `.hack` to represent machine language code. Not to be confused with the programming language hack, the `.hack` files in my program only consist of binary, or 1's and 0's. 
 
-Right now, running the program only shows testing for each data structure. This is meant to show that each data structure/algorithm works as intended. In the future, I plan on making this program visual and interactive, allowing the user to add/remove their own values, and allowing the user to use any functions that the data structure has without having to actually edit the code. All of this will be laid out visually, helping the user to visualize each data structure. Once this is all said and done, I plan on positing it to a website to help newcomers understand data structures better.
+The files you see that end with `.asm` or `.hack` are there pureley for testing. You can test it yourself to see the assembler/disassembler in action. You can also create your own files if you so wish.
 
 ## Demo
 
@@ -37,8 +18,16 @@ Right now, running the program only shows testing for each data structure. This 
 ### Installing and Executing
 
 * Download the source code from github, or clone the repository into Visual Studio
+* If you wish to assemble a `.asm` to machine language code:
+  * Add, or create the `.asm` file in the project folder with the assembly code in it.
+  * Go to `main.cpp` and call the function `assemble(file.asm);`
+* If you wish to disassemble machine language code to a `.asm` file:
+  * Add, or create the `.hack` file in the project folder with machine language code (binary) in it. (I decided to use the `.hack` file extension to represent machine language code...not to be confused with the hack programming language)
+  * Go to `main.cpp` and call the function `disassemble(file.hack);`
+* You can dissassemble and assemble at the same time if you wish to do so
 * Compile code how you like, or, run the command `make`
 * After running `make`', execute by running the command `run` or `run.exe`
+* The assembled `.hack` file and/or the disassembled `.asm` file will automatically be created in your project folder
 
 ## Authors
 
