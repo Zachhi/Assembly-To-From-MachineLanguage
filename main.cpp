@@ -1,6 +1,4 @@
 //Zachary Chi
-//628001407
-//An Aggie does not lie, cheat or steal or tolerate those who do.
 
 #include <iostream>
 #include <cmath>
@@ -13,7 +11,7 @@ using std::endl;
 int main () {
 //EXAMPLES:
 
-//  Assembly
+// Assembly
 // assemble("testProgram.asm");
 
 // Disassembly

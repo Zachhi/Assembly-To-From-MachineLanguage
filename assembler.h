@@ -6,9 +6,9 @@
 #include <string>
 #include <unordered_map>
 using namespace std;
-void assemble(string fileName);
-string Ainst(string line);
-bool isAinst(string line);
-bool isCinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp);
-string Cinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp);
+void assemble(string fileName); //main function that assmebles
+string Ainst(string line); //returns if something is A inst
+bool isAinst(string line); //returns the converted  A inst
+bool isCinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp); //returns if something is C inst
+string Cinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp); //returns converted C inst
 #endif

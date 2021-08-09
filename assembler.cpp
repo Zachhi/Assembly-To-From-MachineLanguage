@@ -1,6 +1,4 @@
 //Zachary Chi
-//628001407
-//An Aggie does not lie, cheat or steal or tolerate those who do.
 #include "assembler.h"
 #include "table.h"
 #include <iostream>
@@ -14,7 +12,7 @@
 #include <vector>
 using namespace std;
 
-bool isAinst(string line)
+bool isAinst(string line) //returns if something is Ainst or not
 {
     if(line.at(0)!='@')
         return false;
@@ -26,7 +24,7 @@ bool isAinst(string line)
         return false;
     return true;
 }
-string Ainst(string line, unordered_map<string, int> symbolTable)
+string Ainst(string line, unordered_map<string, int> symbolTable) //returns converted A instruction
 {
     string Ainst = line.substr(1, line.length()-1);
 
@@ -43,7 +41,7 @@ string Ainst(string line, unordered_map<string, int> symbolTable)
     return line;
 }
 
-bool isCinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp)
+bool isCinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp) //checks if something is a c instruction
 {
     int n = std::count(line.begin(), line.end(), '=');
     int m = std::count(line.begin(), line.end(), ';');
@@ -99,7 +97,7 @@ bool isCinst(string line, unordered_map<string, string> dest, unordered_map<stri
     return true;
 }
 
-string Cinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp)
+string Cinst(string line, unordered_map<string, string> dest, unordered_map<string, string> jump, unordered_map<string, string> comp) //returns converted c instruction
 {
     string tokens = line;
     replace(tokens.begin(), tokens.end(), ';', ' ');
@@ -162,7 +160,7 @@ string Cinst(string line, unordered_map<string, string> dest, unordered_map<stri
     return final;
 
 }
-void assemble(string fileName) {
+void assemble(string fileName) { //main function that assembles the file. Changes .asm to machine language
 
     //create tables here
     unordered_map<string, int> symbolTable;

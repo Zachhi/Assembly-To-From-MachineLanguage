@@ -7,8 +7,8 @@
 #include <unordered_map>
 
 using namespace std;
-void disassemble(string fileName);
-int binaryToDecimal(int n);
+void disassemble(string fileName); //main function that builds the dissassembled file from machine language to assembly
+int binaryToDecimal(int n); //converts binary number to decimal
 
 
 #endif

@@ -1,6 +1,4 @@
 //Zachary Chi
-//628001407
-//An Aggie does not lie, cheat or steal or tolerate those who do.
 
 #include "table.h"
 #include <iostream>
@@ -95,6 +93,7 @@ unordered_map<string, int> createSymbolTable(string fileName)
     return symbolTable;
 }
 
+//these tables help convert asm to machine language and machine language to asm
 unordered_map<string, string> createCompTable(string fileName)
 {
     unordered_map<string, string> compTable;

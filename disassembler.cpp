@@ -1,6 +1,4 @@
 //Zachary Chi
-//628001407
-//An Aggie does not lie, cheat or steal or tolerate those who do.
 #include "assembler.h"
 #include "disassembler.h"
 #include "table.h"
@@ -14,7 +12,7 @@
 #include<sstream>
 #include <vector>
 using namespace std;
-int binaryToDecimal(int n)
+int binaryToDecimal(int n) //converts binary number to decimal
 {
     int num = n;
     int dec_value = 0;
@@ -34,7 +32,7 @@ int binaryToDecimal(int n)
  
     return dec_value;
 }
-void disassemble(string fileName)
+void disassemble(string fileName) //dissassembles. main function, Changes machine language to asm
 {
     unordered_map<string, string> compTable;
     unordered_map<string, string> destTable;
