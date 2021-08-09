@@ -25,6 +25,7 @@ The files you see that end with `.asm` or `.hack` are there pureley for testing.
   * Add, or create the `.hack` file in the project folder with machine language code (binary) in it. (I decided to use the `.hack` file extension to represent machine language code...not to be confused with the hack programming language)
   * Go to `main.cpp` and call the function `disassemble(file.hack);`
 * You can dissassemble and assemble at the same time if you wish to do so
+* Change directory to `<path/to/projectFolder/src>`
 * Compile code how you like, or, run the command `make`
 * After running `make`', execute by running the command `run` or `run.exe`
 * The assembled `.hack` file and/or the disassembled `.asm` file will automatically be created in your project folder
