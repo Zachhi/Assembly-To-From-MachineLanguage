@@ -162,6 +162,7 @@ string Cinst(string line, unordered_map<string, string> dest, unordered_map<stri
 }
 void assemble(string fileName) { //main function that assembles the file. Changes .asm to machine language
 
+    fileName = "../"+fileName;
     //create tables here
     unordered_map<string, int> symbolTable;
     unordered_map<string, string> compTable;

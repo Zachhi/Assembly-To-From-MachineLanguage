@@ -34,6 +34,7 @@ int binaryToDecimal(int n) //converts binary number to decimal
 }
 void disassemble(string fileName) //dissassembles. main function, Changes machine language to asm
 {
+    fileName = "../"+fileName;
     unordered_map<string, string> compTable;
     unordered_map<string, string> destTable;
     unordered_map<string, string> jumpTable;
