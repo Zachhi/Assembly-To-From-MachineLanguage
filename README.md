@@ -1,18 +1,24 @@
-# DataStructures-And-Algorithims
-Implementation of every main data structure, as well as Dijkstra's and Prim's algorithm.
+Instructions for program:
 
-**Data structures included**
-* ArrayList
-* Doubly Linked List
-* Stack
-* Queue
-* Binary Search tree
-* AVL (Self-Balancing) Tree
-* Red-Black Tree
-* Open Addressing Hashtable
-* Seperate Chaining Hashtable
-* Directed Graph with implementation of Dijkstra's algorithm (finds shortest paths)
-* Undirected graph with implementation of Prim's algorithim (finds the minimum spanning tree)
+1. compile program. 
+    
+    You can use: g++ assembler.h assembler.cpp table.cpp table.h main.cpp disassembler.h disassembler.cpp -o a.out
+    And then to run it:    ./a.out
+
+or compile to your liking.
+
+2. add .txt or .hack or .asm file (whatever is being used to test) to repository
+
+3. go to main.cpp function, this will be all you need.
+4. for assembly, just call: assemble("testfilename.whatever")
+5. for disassembly, just call: disassemble("testFileName.whatever")
+
+6. after writing the functions, run the program with ./a.out or with whatever you like
+
+7. these will automatically create .hack and .asm files with the result of the output
+
+# Assembly-To-From-MachineLanguage
+Implementation of every main data structure, as well as Dijkstra's and Prim's algorithm.
 
 ## About
 
