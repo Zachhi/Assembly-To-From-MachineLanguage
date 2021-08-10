@@ -27,7 +27,7 @@ The files you see that end with `.asm` or `.hack` are there pureley for testing.
 * You can dissassemble and assemble at the same time if you wish to do so
 * Change directory to `<path/to/projectFolder/src>`
 * Compile code how you like, or, run the command `make`
-* After running `make`', execute by running the command `run` or `run.exe`
+* After running `make`', execute by running the executeable `run` or `run.exe`
 * The assembled `.hack` file and/or the disassembled `.asm` file will automatically be created in your project folder
 
 ## Authors
