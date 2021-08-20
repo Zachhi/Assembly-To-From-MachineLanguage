@@ -9,6 +9,7 @@ The files you see that end with `.asm` or `.hack` are there pureley for testing.
 
 ## Demo
 
+https://www.youtube.com/watch?v=sT9SZdZqSJE
 
 ### Dependencies
 
