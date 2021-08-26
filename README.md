@@ -1,5 +1,5 @@
 # Assembly-To-From-MachineLanguage
-An assembler and disassembler for the low-level language assembly, which will convert assembly files to machine language, and machine language files to assembly.
+An assembler and disassembler for the low-level language assembly, which will convert assembly(.asm) files to machine language, and machine language files to assembly.
 
 ## About
 
