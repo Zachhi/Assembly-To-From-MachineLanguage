@@ -1,15 +1,36 @@
 # Assembly-To-From-MachineLanguage
-An assembler and disassembler for the low-level language assembly, which will convert assembly(.asm) files to machine language, and machine language files to assembly.
+An assembler and disassembler for the low-level language hack assembly, which will convert hack assembly(`.asm`) files to machine language (`.hack`), and machine language files to hack assembly.
 
 ## About
 
-This program takes assembly (or `.asm`) files and assembles them into machine language, A.K.A, binary. I used the file extension `.hack` to represent machine language code. Not to be confused with the programming language hack, the `.hack` files in my program only consist of binary, or 1's and 0's. 
+This program takes hack assembly (or `.asm`) files and assembles them into machine language (`.hack`), A.K.A, binary. I used the file extension `.hack` to represent machine language code. Not to be confused with the programming language hack, the `.hack` files in my program only consist of binary, or 1's and 0's. 
 
 The files you see that end with `.asm` or `.hack` are there pureley for testing. You can test it yourself to see the assembler/disassembler in action. You can also create your own files if you so wish. Assembling `test.asm` will result in the `test.hack` file and vice versa. The same is true for `programTest.asm` and `programTest.hack`. Of course, if you don't delete any of these, nothing will change when you run it through the program, as both the `.hack` and `.asm` files already exist, so no new files will be created.
 
 ## Demo
 
 https://www.youtube.com/watch?v=sT9SZdZqSJE
+
+## What is Hack Assembly? 
+
+The Hack Assembly Language consists of 3 types of instructions. It allows us to declare symbols with a single symbol declatation. Hack assembly ignored whitespace and you can write comments with `//`. Symbols can be variables and labels
+
+### Types of Instructions
+
+1. A-Instruction: Addressing instructions, used with a preceding `@`
+2. C-Instruction: Computation instructions, used with either `=` or `;`
+3. L-Instruction: Labels (Symbols) declaration instructions, used with `(symbol)`
+
+### Predefined Symbols
+
+- **A**: Address Register.
+- **D**: Data Register.
+- **M**: Refers to the register in Main Memory whose address is currently stored in **A**.
+- **R0**-**R15**: Addresses of 16 RAM Registers, mapped from 0 to 15.
+- **SCREEN**: Base address of the Screen Map in Main Memory, which is equal to 16384.
+- **KBD**: Keyboard Register address in Main Memory, which is equal to 24576.
+
+For a more in depth explanation of this language, visit https://www.coursera.org/lecture/build-a-computer/unit-6-2-the-hack-assembly-language-AYPo6
 
 ### Dependencies
 
