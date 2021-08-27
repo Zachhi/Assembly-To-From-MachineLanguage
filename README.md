@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=sT9SZdZqSJE
 
 ## What is Hack Assembly? 
 
-The Hack Assembly Language consists of 3 types of instructions. It allows us to declare symbols with a single symbol declatation. Hack assembly ignored whitespace and you can write comments with `//`. Symbols can be variables and labels
+The Hack Assembly Language consists of 3 types of instructions. It allows us to declare symbols with a single symbol declaration. Hack assembly ignores whitespace and you can write comments with `//`.
 
 ### Types of Instructions
 
@@ -23,12 +23,12 @@ The Hack Assembly Language consists of 3 types of instructions. It allows us to 
 
 ### Predefined Symbols
 
-- **A**: Address Register.
-- **D**: Data Register.
-- **M**: Refers to the register in Main Memory whose address is currently stored in **A**.
-- **R0**-**R15**: Addresses of 16 RAM Registers, mapped from 0 to 15.
-- **SCREEN**: Base address of the Screen Map in Main Memory, which is equal to 16384.
-- **KBD**: Keyboard Register address in Main Memory, which is equal to 24576.
+- **A**: Address Register
+- **D**: Data Register
+- **M**: Refers to the register in Main Memory whose address is currently stored in **A**
+- **R0**-**R15**: Addresses of 16 RAM Registers, mapped from 0 to 15
+- **SCREEN**: Base address of the Screen Map in Main Memory, which is equal to 16384
+- **KBD**: Keyboard Register address in Main Memory, which is equal to 24576
 
 For a more in depth explanation of this language, visit https://www.coursera.org/lecture/build-a-computer/unit-6-2-the-hack-assembly-language-AYPo6
 
